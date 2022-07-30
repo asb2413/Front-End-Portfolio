@@ -1,0 +1,16 @@
+@use '../../global.scss' as *;
+
+.home{
+
+    position: relative;
+    top: 85px;
+    height: 400vh;
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+
+}

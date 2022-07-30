@@ -1,0 +1,8 @@
+.about {
+  position: relative;
+  top: 85px;
+  background-color: rgb(35, 37, 47);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  height: calc(100vh - 85px);
+}/*# sourceMappingURL=about.css.map */
