@@ -1,11 +1,19 @@
 .navbar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 85px;
   z-index: 2;
   background-color: rgb(35, 37, 47);
   padding: 0;
 }
 .navbar .container {
+  margin-left: 0;
+  margin-right: 0;
   height: 100%;
+  width: 100%;
 }
 .navbar .info {
   display: flex;
@@ -16,6 +24,11 @@
 .navbar .info h2 {
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .navbar .info {
+    display: none;
+  }
+}
 .navbar .my-photo {
   width: 50px;
   height: 50px;
@@ -23,15 +36,17 @@
 .navbar .name {
   color: white;
   font-size: 24px;
+  margin-right: 10px;
 }
 .navbar .list {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  width: 35%;
 }
 .navbar .list a {
   border-radius: 14px;
   color: white;
   font-size: 20px;
-  margin-left: 15px;
 }
 .navbar .list a:hover {
   background-color: rgba(0, 0, 0, 0.24);
@@ -46,6 +61,12 @@
   outline-style: none;
   color: white;
   font-size: 20px;
+  margin-right: 18px;
+}
+.navbar .contact-button button a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
 }
 .navbar .contact-button button:hover {
   margin-bottom: 7px;

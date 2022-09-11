@@ -6,9 +6,10 @@ import Topbar from './components/navbar/Topbar.jsx';
 import {BrowserRouter , Route , Routes , Link} from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About'
-import Contact from './components/contact/Contact';
 import Content from './components/content/Content';
 import Skills from './components/skills/Skills';
+import Project from './components/project/Project';
+import Footer from './components/footer/Footer';
 
 
 
@@ -30,12 +31,13 @@ function App() {
         
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='About' element={<About/>}/>
-          <Route path='Contact' element={<Contact/>}/>
+          <Route path='Project' element={<Project/>}/>
+          
         </Routes>
 
         <div className="app">
-        <Topbar />
+        
+        
             
         </div> 
         

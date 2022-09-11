@@ -8,12 +8,12 @@ import htmlImg from '../../photos/htmlImg.svg'
 
 export default function Screen() {
 
-  // state for number of slide 
+  // state for number of slides
   const [currentSlid, setCurrentSlid] = useState(0)
   // array of imgs 
   const imgs = [htmlImg,cssImg,jsImg,reactImg]
   // state for current img 
-  const [img , setimg] = useState(imgs[0])
+  const [img , setImg] = useState(imgs[0])
 
   // array of heads
   const badgsH1 = [
@@ -29,13 +29,16 @@ export default function Screen() {
   ]
 
   const colors = ["#E65100","#0277BD","#F7DF1E","#00D8FF"]
-
+  const colorsOpacity = ["#e651005b","#0278bd63","#f7de1e59","#00d9ff5d"]
+  const transistion = ["opacity 0.3s","opacity 0.3s","opacity 0.3s","opacity 0.3s"]
   // state for h1, p 
   const [h1, setH1] = useState(badgsH1[0])
   const [p, setP] = useState(badgsP[0])
 
   
   const [borderColers, setBorderColor] = useState(colors[0])
+  const [borderOpacity, setOpacityColor] = useState(colors[0])
+  const [trans, setTrans] = useState(transistion[0])
 
  
 
@@ -49,11 +52,13 @@ function currentImg(){
   }
 
   // set img  
-  setimg(imgs[currentSlid])
+  setImg(imgs[currentSlid])
   // set  badge
   setH1(badgsH1[currentSlid])
   setP(badgsP[currentSlid])
   setBorderColor(colors[currentSlid])
+  setOpacityColor(colorsOpacity[currentSlid])
+  setTrans(transistion[currentSlid])
 }
 
 
@@ -68,10 +73,16 @@ useEffect(() => {
 
 
 let timer = window.setTimeout(()=>{
-
-    setCurrentSlid(currentSlid + 1)
-    
+  
+    setCurrentSlid(currentSlid + 1)     
+     
 },6000)
+
+
+
+
+
+
 
 currentImg()
 
@@ -126,11 +137,8 @@ slide4.addEventListener('click', ()=>{
   
   buttonActive()
 
-  
 
 
-
-  
 
 }
 
@@ -152,7 +160,7 @@ activeSlide();
 
       <div className='contain' id='contain' style={{borderColor:borderColers}}>
       
-      <div className='badges'>
+      <div className='badges' style={{borderWidth:"2px",borderStyle:"solid", borderColor:borderOpacity}}>
 
           <h1>{h1}</h1>
           <p>{p}</p>
@@ -167,6 +175,7 @@ activeSlide();
           <button className='btns 'id='slide-4'></button>
 
         </div>
+
 
         <img id='backgroundImg' src={img} alt="" />
 

@@ -1,5 +1,144 @@
 .skills {
+  position: absolute;
+  top: 1200px;
   background-color: rgb(35, 37, 47);
   color: rgb(255, 255, 255);
   font-size: 24px;
+  width: 100%;
+  height: 650px;
+}
+.skills .title {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.skills .contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+}
+.skills .contain .line-1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.skills .contain .line-1 .containIcon {
+  display: flex;
+  justify-content: center;
+}
+.skills .contain .line-1 .containIcon .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3B3A51;
+  border-radius: 15px;
+}
+.skills .contain .line-1 .containIcon .icon {
+  width: 55px;
+  height: 55px;
+  color: white;
+}
+.skills .contain .line-1 .containIcon .text h1 {
+  font-size: 26px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.skills .contain .line-1 .containIcon .text p {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+@media (max-width: 1024px) {
+  .skills .contain .line-1 {
+    flex-direction: column;
+  }
+}
+.skills .contain .line-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
+}
+.skills .contain .line-2 .containIcon {
+  display: flex;
+  justify-content: center;
+}
+.skills .contain .line-2 .containIcon .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3B3A51;
+  border-radius: 15px;
+}
+.skills .contain .line-2 .containIcon .icon {
+  width: 55px;
+  height: 55px;
+  color: white;
+}
+.skills .contain .line-2 .containIcon .text h1 {
+  font-size: 26px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.skills .contain .line-2 .containIcon .text p {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+@media (max-width: 1024px) {
+  .skills .contain .line-2 {
+    flex-direction: column;
+  }
+}
+.skills .contain .line-3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.skills .contain .line-3 .containIcon {
+  display: flex;
+  justify-content: center;
+}
+.skills .contain .line-3 .containIcon .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 70px;
+  height: 70px;
+  border: 1px solid #3B3A51;
+  border-radius: 15px;
+}
+.skills .contain .line-3 .containIcon .icon {
+  width: 55px;
+  height: 55px;
+  color: white;
+}
+.skills .contain .line-3 .containIcon .text h1 {
+  font-size: 26px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.skills .contain .line-3 .containIcon .text p {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+@media (max-width: 1024px) {
+  .skills .contain .line-3 {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=skills.css.map */

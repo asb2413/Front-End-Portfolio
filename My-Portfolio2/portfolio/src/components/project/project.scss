@@ -1,0 +1,75 @@
+@use "../../global.scss" as *;
+
+.project{
+
+     background-color: $main-color;
+     position: relative;
+     top: 0px;
+     height: 350vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     .contain{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 200px;
+
+
+        h1{
+
+            color: white;
+            text-align: center;
+            
+
+        }
+
+        p{
+
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 24px;
+
+        }
+
+        a { 
+            
+            margin-top: 40px;
+            background-color: #3B3A51;
+            width: 200px;
+            border-radius: 11px;
+            border-style: none;
+            height: 42px;
+            outline-style: none;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding-top: 3px;
+
+
+            &:hover {
+
+                background-color: #3b3a516b;
+
+            }
+
+            
+
+          
+
+     }
+    }
+     
+}
+
+

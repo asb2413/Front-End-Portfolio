@@ -3,14 +3,23 @@
 .home{
 
     position: relative;
-    top: 85px;
-    height: 400vh;
+    
+    height: 2850px;
     background-color: $main-color;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     
     
 
 }
+
+@media (max-width:  1280px) {
+    .home{
+        
+        height: 3608px;
+
+    }
+}
+
+
