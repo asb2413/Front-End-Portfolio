@@ -95,9 +95,21 @@ height: 600px;
         
 
     }
+    @media (min-width:350px) and (max-width: 448px) {
+
+        .badges{
+    
+            font-size: 15px;
+    
+        }
+    
+    }
+    
 
     
 }
+
+
 
 
 @media (max-width:  1280px) {

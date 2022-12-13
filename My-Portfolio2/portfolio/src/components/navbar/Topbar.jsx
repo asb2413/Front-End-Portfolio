@@ -24,7 +24,7 @@ export default function Topbar() {
           <button  ><a href="#contact">Contact Me</a></button>
           </div>
 
-          <div className='sun'><BsBrightnessAltHigh className='sun'/></div>
+          
       </Container>
     </div>
   

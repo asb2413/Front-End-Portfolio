@@ -88,6 +88,11 @@
   font-size: 16px;
   border-radius: 15px;
 }
+@media (min-width: 350px) and (max-width: 450px) {
+  .footer .section-2 .form form .formContain .text {
+    width: 310px;
+  }
+}
 .footer .section-2 .form form .formContain button {
   background-color: #3B3A51;
   width: 150px;
